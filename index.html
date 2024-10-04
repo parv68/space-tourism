@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Space tourism website</title>
 </head>
+
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <section id="navbar__section">
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <img src="assets/shared/logo.svg" alt="logo image">
+        </div>
+        <div class="hr">
+          <hr>
+        </div>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+        <!-- Menu Toggle for mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-  Explore
+        <div class="nav-links">
+          <a href="" class="active"><span>00</span> Home</a>
+          <a href=""><span>01</span> Destination</a>
+          <a href=""><span>02</span> Crew</a>
+          <a href=""><span>03</span> Technology</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="intro__section">
+    <div class="container">
+      <div class="intro">
+        <div class="left">
+          <p id="heading">So, you want to travel to</p>
+          <h1>SPACE</h1>
+          <p>Let’s face it; if you want to go to space, you might as well genuinely go to
+            outer space and not hover kind of on the edge of it. Well sit back, and relax
+            because we’ll give you a truly out of this world experience!</p>
+        </div>
+        <div class="right">
+          <div class="circle">
+            <h1>EXPLORE</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav');
+      nav.classList.toggle('menu-open');
+    }
+  </script>
+  
 </body>
+
 </html>
