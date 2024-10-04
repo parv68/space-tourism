@@ -133,6 +133,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+    body{
+        background: url('./assets/home/background-home-tablet.jpg') top no-repeat;
+    }
     .nav {
         justify-content: space-between;
     }
@@ -186,6 +189,9 @@ hr {
 }
 
 @media (max-width: 480px) {
+    body{
+        background: url('./assets/home/background-home-mobile.jpg') top no-repeat;
+    }
     .nav-links {
         width: 100%;
         right: 0;
