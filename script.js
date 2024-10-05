@@ -249,10 +249,14 @@ function titanSection(){
 
 
 const navLinks = document.querySelectorAll('.nav-links a');
-
+const destinationLinks = document.querySelectorAll('.destination-links a')
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navLinks.forEach(l => l.classList.remove('active'));
     link.classList.add('active');
   });
 });
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('menu-open');
+}
