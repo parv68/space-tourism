@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('./assets/home/background-home-desktop.jpg') top no-repeat;
     background-size: cover;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
@@ -141,12 +140,63 @@ hr {
     justify-content: center;
 }
 
+.left-destination{
+    width: 50%;
+}
+.right-destination{
+    width: 50%;
+}
+.left-destination p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
 
+.left-destination span{
+    font-weight: bold;
+    color: rgb(90, 78, 78);
+}
+.destination-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
+.destination-links a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 5px;
+}
 
+.destination-info h1{
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.destination-info h2{
+    color: white;
+}
+.destination-info p{
+    color: white;
+    line-height: 1.5;
+    font-size: 18px;
+    
+}
 
+.destination-info .info{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
-
+.destination-info hr{
+    width: 100%;
+    margin: 40px 0;
+}
 
 
 
