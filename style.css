@@ -20,7 +20,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .logo img {
@@ -134,6 +133,22 @@ hr {
     height: 2px;
     background: white;
 }
+
+
+#destination__section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     body{
