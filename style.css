@@ -69,8 +69,6 @@ hr {
     display: flex;
     align-items: center;
     color: white;
-    min-height: 70vh;
-    margin-top: 100px;
 }
 
 .left {
