@@ -1,4 +1,6 @@
-
+document.addEventListener("DOMContentLoaded", () => {
+    loadContent('home');
+});
 function loadContent(section) {
     const content = document.getElementById('content');
     switch (section) {
@@ -47,10 +49,10 @@ function loadContent(section) {
                         </div>
                         <div class="right-destination">
                             <div class="destination-links">
-                                <a href="#moon" class="active">Moon</a>
-                                <a href="#mars">Mars</a>
-                                <a href="">Europa</a>
-                                <a href="">Titan</a>
+                                <a href="#" id="moon-link">Moon</a>
+                                <a href="#" id="mars-link">Mars</a>
+                                <a href="#" id="europa-link">Europa</a>
+                                <a href="#" id="titan-link">Titan</a>
                             </div>
 
                             <div class="destination-info">
@@ -127,6 +129,18 @@ function loadContent(section) {
                     </div>
                 </section>
             `;
+            document.getElementById('moon').style.display = 'block';
+            document.getElementById('moon-image').style.display = 'block';
+            document.getElementById('mars').style.display = 'none';
+            document.getElementById('mars-image').style.display = 'none';
+            document.getElementById('europa').style.display = 'none';
+            document.getElementById('europa-image').style.display = 'none';
+            document.getElementById('titan').style.display = 'none';
+            document.getElementById('titan-image').style.display = 'none';
+            document.getElementById('moon-link').addEventListener('click', moonSection);
+            document.getElementById('mars-link').addEventListener('click', marsSection);
+            document.getElementById('europa-link').addEventListener('click', europaSection);
+            document.getElementById('titan-link').addEventListener('click', titanSection);
             break;
             case 'crew':
                 content.innerHTML = `
@@ -153,17 +167,92 @@ function loadContent(section) {
 }
 
 
+function moonSection(){
+    const moon = document.getElementById('moon')
+    const mars = document.getElementById('mars')
+    const europa = document.getElementById('europa')
+    const titan = document.getElementById('titan')
+    const moonImage = document.getElementById('moon-image')
+    const marsImage = document.getElementById('mars-image')
+    const europaImage = document.getElementById('europa-image')
+    const titanImage = document.getElementById('titan-image')
 
-
-
-
-
-
-function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('menu-open');
+    moon.style.display = 'block'
+    moonImage.style.display = 'block'
+    mars.style.display = 'none'
+    marsImage.style.display = 'none'
+    europa.style.display = 'none'
+    europaImage.style.display = 'none'
+    titan.style.display = 'none'
+    titanImage.style.display = 'none'
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadContent('home');
+function marsSection(){
+    const moon = document.getElementById('moon')
+    const mars = document.getElementById('mars')
+    const europa = document.getElementById('europa')
+    const titan = document.getElementById('titan')
+    const moonImage = document.getElementById('moon-image')
+    const marsImage = document.getElementById('mars-image')
+    const europaImage = document.getElementById('europa-image')
+    const titanImage = document.getElementById('titan-image')
+
+    moon.style.display = 'none'
+    moonImage.style.display = 'none'
+    mars.style.display = 'block'
+    marsImage.style.display = 'block'
+    europa.style.display = 'none'
+    europaImage.style.display = 'none'
+    titan.style.display = 'none'
+    titanImage.style.display = 'none'
+}
+
+function europaSection(){
+    const moon = document.getElementById('moon')
+    const mars = document.getElementById('mars')
+    const europa = document.getElementById('europa')
+    const titan = document.getElementById('titan')
+    const moonImage = document.getElementById('moon-image')
+    const marsImage = document.getElementById('mars-image')
+    const europaImage = document.getElementById('europa-image')
+    const titanImage = document.getElementById('titan-image')
+
+    moon.style.display = 'none'
+    moonImage.style.display = 'none'
+    mars.style.display = 'none'
+    marsImage.style.display = 'none'
+    europa.style.display = 'block'
+    europaImage.style.display = 'block'
+    titan.style.display = 'none'
+    titanImage.style.display = 'none'
+}
+
+function titanSection(){
+    const moon = document.getElementById('moon')
+    const mars = document.getElementById('mars')
+    const europa = document.getElementById('europa')
+    const titan = document.getElementById('titan')
+    const moonImage = document.getElementById('moon-image')
+    const marsImage = document.getElementById('mars-image')
+    const europaImage = document.getElementById('europa-image')
+    const titanImage = document.getElementById('titan-image')
+
+    moon.style.display = 'none'
+    moonImage.style.display = 'none'
+    mars.style.display = 'none'
+    marsImage.style.display = 'none'
+    europa.style.display = 'none'
+    europaImage.style.display = 'none'
+    titan.style.display = 'block'
+    titanImage.style.display = 'block'
+}
+
+
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
 });
