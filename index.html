@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <section id="navbar__section">
     <div class="container">
       <div class="nav">
@@ -28,41 +27,21 @@
         </div>
 
         <div class="nav-links">
-          <a href="" class="active"><span>00</span> Home</a>
-          <a href=""><span>01</span> Destination</a>
-          <a href=""><span>02</span> Crew</a>
-          <a href=""><span>03</span> Technology</a>
+          <a href="#" class="active" onclick="loadContent('home')"><span>00</span> Home</a>
+          <a href="#" onclick="loadContent('destination')"><span>01</span> Destination</a>
+          <a href="#" onclick="loadContent('crew')"><span>02</span> Crew</a>
+          <a href="#" onclick="loadContent('technology')"><span>03</span> Technology</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="intro__section">
-    <div class="container">
-      <div class="intro">
-        <div class="left">
-          <p id="heading">So, you want to travel to</p>
-          <h1>SPACE</h1>
-          <p>Let’s face it; if you want to go to space, you might as well genuinely go to
-            outer space and not hover kind of on the edge of it. Well sit back, and relax
-            because we’ll give you a truly out of this world experience!</p>
-        </div>
-        <div class="right">
-          <div class="circle">
-            <h1>EXPLORE</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Content Section -->
+  <section id="content" class="container">
+    <!-- Dynamic content will be loaded here -->
   </section>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('.nav');
-      nav.classList.toggle('menu-open');
-    }
-  </script>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>
