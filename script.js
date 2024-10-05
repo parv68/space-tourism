@@ -24,11 +24,20 @@ function loadContent(section) {
             break;
         case 'destination':
             content.innerHTML = `
+            <style>
+                body{
+                    background: url('./assets/destination/background-destination-desktop.jpg') center no-repeat;
+                    background-size: cover;
+                }
+                </style>
                 <section id="destination__section">
                     <div class="container">
                         <div class="left-destination">
                             <p>01 Pick your destination</p>
-                            <img src="" alt="">
+                            <img src="./assets/destination/image-moon.png" alt="moon">
+                            <img src="./assets/destination/image-mars.png" alt="mars">
+                            <img src="./assets/destination/image-europa.png" alt="europa">
+                            <img src="./assets/destination/image-titan.png" alt="titan">
                         </div>
                         <div class="right-destination">
                             <div class="destination-links">
@@ -39,7 +48,7 @@ function loadContent(section) {
                             </div>
                            
                             <div class="destination-info">
-                                // moon 
+                                <!-- moon -->
                                 <div class="moon">
                                     <h1>Moon</h1>
                                     <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
