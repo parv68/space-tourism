@@ -333,9 +333,6 @@ hr {
 
 
 @media (max-width: 480px) {
-    body{
-        background: url('./assets/home/background-home-mobile.jpg') top no-repeat flex;
-    }
     .nav-links {
         width: 90%;
         right: 0;
