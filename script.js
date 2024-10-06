@@ -207,8 +207,8 @@ function loadContent(section) {
 
                     </div>
                 </section>
-
                 `;
+                setTimeout(startCrewSlider, 500);
             break
             case 'technology': 
                 content.innerHTML =`
@@ -318,3 +318,27 @@ function toggleMenu() {
     nav.classList.toggle('menu-open');
 }
 
+let currentMemberIndex = 0;
+let crewMembers;
+
+function startCrewSlider() {
+    crewMembers = document.querySelectorAll('.crew-members .member');
+    if (!crewMembers.length) {
+        console.error('No crew members found.');
+        return;
+    }
+
+    crewMembers.forEach((member, index) => {
+        if (index !== currentMemberIndex) {
+            member.style.display = 'none';
+        } else {
+            member.style.display = 'flex'; 
+        }
+    });
+
+    setInterval(() => {
+        crewMembers[currentMemberIndex].style.display = 'none';
+        currentMemberIndex = (currentMemberIndex + 1) % crewMembers.length;
+        crewMembers[currentMemberIndex].style.display = 'flex';
+    }, 2500); 
+}
