@@ -146,18 +146,8 @@ hr {
 .right-destination{
     width: 50%;
 }
-.left-destination p{
-    color: white;
-    text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: 3px;
-    font-weight: 400;
-}
 
-.left-destination span{
-    font-weight: bold;
-    color: rgb(90, 78, 78);
-}
+
 .destination-links{
     display: flex;
     align-items: center;
@@ -176,12 +166,22 @@ hr {
     color: rgb(187, 184, 184);
     border-bottom: 2px solid white;
 }
-
+.header{
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.header span{
+    font-weight: bold;
+    color: rgb(90, 78, 78);
+}
     
 .destination-links a:hover{
     color: rgb(187, 184, 184);
 }
-.destination-info h1{
+ h1{
     color: white;
     font-size: 48px;
     text-transform: uppercase;
@@ -189,7 +189,7 @@ hr {
 .destination-info h2{
     color: white;
 }
-.destination-info p{
+ p{
     color: rgb(187, 184, 184);
     line-height: 1.5;
     font-size: 18px;
@@ -205,6 +205,28 @@ hr {
 .destination-info hr{
     width: 100%;
     margin: 40px 0;
+}
+
+.crew-members{
+    display: flex;
+    overflow: hidden;
+}
+.member{
+    display: flex;
+    width: 100%;
+
+}
+.member .left{
+    width: 50%;
+    
+}
+.member .right{
+    width: 50%;
+}
+.member .role{
+    color: rgb(187, 184, 184);
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 
