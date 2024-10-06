@@ -261,6 +261,20 @@ hr {
     .destination-info p{
         font-size: 14px;
     }
+    .crew-members {
+        flex-direction: column;
+    }
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .member .right {
+        width: 100%;
+    }
 }
 
 
@@ -350,6 +364,18 @@ hr {
     .destination-info p{
         font-size: 12px;
     }
+    .member .left {
+        margin-bottom: 10px;
+    }
+    .member .role {
+        font-size: 24px;
+    }
+    .member h1 {
+        font-size: 24px;
+    }
+    .member p {
+        font-size: 14px;
+    }
 }
 
 
@@ -379,15 +405,32 @@ hr {
         padding: 20px;
     }
     .left-destination p{
-        font-size: 18px;
+        font-size: 22px;
     }
     .destination-links a{
         padding-bottom: 0;
     }
     .destination-info h1{
-        font-size: 28px;
+        font-size: 36px;
     }
     .destination-info p{
         font-size: 10px;
+    }
+    .header{
+        font-size: 22px;
+    }
+    .member .role {
+        font-size: 18px;
+    }
+    .member h1 {
+        font-size: 28px;
+    }
+    .member p {
+        font-size: 12px;
+    }
+    .crew-members img{
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
     }
 }
