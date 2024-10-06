@@ -41,7 +41,7 @@ function loadContent(section) {
                 <section id="destination__section">
                     <div class="container">
                         <div class="left-destination">
-                            <p><span>01</span> Pick your destination</p>
+                            <p class="header"><span>01</span> Pick your destination</p>
                             <img src="./assets/destination/image-moon.png" alt="moon" id="moon-image">
                             <img src="./assets/destination/image-mars.png" alt="mars" id="mars-image">
                             <img src="./assets/destination/image-europa.png" alt="europa" id="europa-image">
@@ -150,6 +150,63 @@ function loadContent(section) {
                         background-size: cover;
                     }
                 </style>
+                <section id="crew__section">
+                    <div class="container">
+                        <p class="header"><span>02</span> Meet your crew</p>
+                        <div class="crew-members">
+
+                            <!-- commander -->
+                            <div class="member">
+                                <div class="left">
+                                    <p class="role">Commander</p>
+                                    <h1>Dougles Hurley</h1>
+                                    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                                </div>
+                                <div class="right">
+                                    <img src="./assets/crew/image-douglas-hurley.png" alt="commander image">
+                                </div>
+                            </div>
+
+                            <!-- pilot -->
+                            <div class="member">
+                                <div class="left">
+                                    <p class="role">Pilot</p>
+                                    <h1>Victor Glover</h1>
+                                    <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+                                </div>
+                                <div class="right">
+                                    <img src="./assets/crew/image-victor-glover.png" alt="victor glover image">
+                                </div>
+                            </div>
+
+                            <!-- specialist -->
+                            <div class="member">
+                                <div class="left">
+                                <p class="role">Mission Specialist</p>
+                                <h1>Mark Shuttleworth</h1>
+                                <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+                                </div>
+                                <div class="right">
+                                <img src="./assets/crew/image-mark-shuttleworth.png" alt="image-mark-shuttleworth">
+                                </div>
+                            </div>
+
+                            <!-- engineer -->
+                            <div class="member">
+                                <div class="left">
+                                    <p class="role">Flight Engineer</p>
+                                    <h1>Anousheh Ansari</h1>
+                                    <p>  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
+                                </div>
+                                <div class="right">
+                                    <img src="./assets/crew/image-anousheh-ansari.png" alt="image-anousheh-ansari">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </section>
 
                 `;
             break
@@ -260,3 +317,4 @@ function toggleMenu() {
     const nav = document.querySelector('.nav');
     nav.classList.toggle('menu-open');
 }
+
