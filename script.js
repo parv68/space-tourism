@@ -340,5 +340,5 @@ function startCrewSlider() {
         crewMembers[currentMemberIndex].style.display = 'none';
         currentMemberIndex = (currentMemberIndex + 1) % crewMembers.length;
         crewMembers[currentMemberIndex].style.display = 'flex';
-    }, 2500); 
+    }, 4000); 
 }
