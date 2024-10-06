@@ -209,7 +209,6 @@ hr {
 
 .crew-members{
     display: flex;
-    overflow: hidden;
 }
 .member{
     display: flex;
