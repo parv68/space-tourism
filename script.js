@@ -208,7 +208,7 @@ function loadContent(section) {
                     </div>
                 </section>
                 `;
-                setTimeout(startCrewSlider, 500);
+                setTimeout(startCrewSlider, 0);
             break
             case 'technology': 
                 content.innerHTML =`
