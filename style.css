@@ -228,6 +228,44 @@ hr {
     text-transform: uppercase;
 }
 
+.technology{
+    display: flex;
+    margin-top: 80px;
+}
+.technology .technology-heading{
+    font-size: 22px;
+}
+.technology img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.vehicle, .capsule, .spaceport {
+    display: none; 
+}
+
+.vehicle {
+    display: flex;
+}
+
+.nav-number{
+    display: flex;
+    flex-direction: column;
+}
+.nav-number .number{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 10px ;
+}
+.number a{
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 1200px) {
     .left-destination p{
