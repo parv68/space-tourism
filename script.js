@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadContent('home');
 });
+
 function loadContent(section) {
     const content = document.getElementById('content');
     switch (section) {
@@ -224,13 +225,13 @@ function loadContent(section) {
                         <div class="technology">
                             <!-- nav-numbers -->
                             <div class="nav-number">
-                                <div class="number1"> 
+                                <div class="number"> 
                                     <a href="">1</a>
                                 </div>
-                                <div class="number2">
+                                <div class="number">
                                     <a href="">2</a>
                                 </div>
-                                <div class="number3">
+                                <div class="number">
                                     <a href="">3</a>
                                 </div>
                             </div>
@@ -238,7 +239,7 @@ function loadContent(section) {
                             <!-- launch-venicle -->
                             <div class="vehicle">
                                 <div class="left">
-                                    <p>The terminology...</p>
+                                    <p class="technology-heading">The terminology...</p>
                                     <h1>Launch vehicle</h1>
                                     <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
                                 </div>
@@ -250,7 +251,7 @@ function loadContent(section) {
                             <!-- capsule -->
                             <div class="capsule">
                                 <div class="left">
-                                    <p>The terminology...</p>
+                                    <p class="technology-heading">The terminology...</p>
                                     <h1>Space Capsule</h1>
                                     <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
                                 </div>
@@ -262,7 +263,7 @@ function loadContent(section) {
                             <!-- spaceport -->
                             <div class="spaceport">
                                 <div class="left">
-                                    <p>The terminology...</p>
+                                    <p class="technology-heading">The terminology...</p>
                                     <h1>Spaceport</h1>
                                     <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
                                 </div>
