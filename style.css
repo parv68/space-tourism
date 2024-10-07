@@ -241,7 +241,10 @@ hr {
 .technology .technology-heading{
     font-size: 22px;
 }
-
+.technology img{
+    width: 400px;
+    height: 500px;
+}
 .nav-number{
     display: flex;
     flex-direction: column;
@@ -468,5 +471,19 @@ hr {
         width: 400px;
         height: 500px;
         object-fit: cover;
+    }
+    .technology{
+        flex-direction: column;
+    }
+    .technology img{
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .nav-number{
+        flex-direction:row ;
+    }
+    .vehicle, .spaceport, .capsule{
+        flex-direction: column;
     }
 }
