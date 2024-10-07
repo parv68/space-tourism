@@ -226,57 +226,76 @@ function loadContent(section) {
                             <!-- nav-numbers -->
                             <div class="nav-number">
                                 <div class="number"> 
-                                    <a href="">1</a>
+                                    <a href="" id="number1">1</a>
                                 </div>
                                 <div class="number">
-                                    <a href="">2</a>
+                                    <a href="" id="number2">2</a>
                                 </div>
                                 <div class="number">
-                                    <a href="">3</a>
+                                    <a href="" id="number3">3</a>
                                 </div>
                             </div>
 
                             <!-- launch-venicle -->
-                            <div class="vehicle">
+                            <div class="vehicle" id="vehicle">
                                 <div class="left">
                                     <p class="technology-heading">The terminology...</p>
                                     <h1>Launch vehicle</h1>
                                     <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
                                 </div>
                                 <div class="right">
-                                    <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="image-launch-vehicle-landscape">
+                                    <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="image-launch-vehicle-landscape">
                                 </div>
                             </div>
 
                             <!-- capsule -->
-                            <div class="capsule">
+                            <div class="capsule" id="capsule">
                                 <div class="left">
                                     <p class="technology-heading">The terminology...</p>
                                     <h1>Space Capsule</h1>
                                     <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
                                 </div>
                                 <div class="right">
-                                    <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="image-space-capsule-landscape">
+                                    <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="image-space-capsule-landscape">
                                 </div>
                             </div>
 
                             <!-- spaceport -->
-                            <div class="spaceport">
+                            <div class="spaceport" id="spaceport">
                                 <div class="left">
                                     <p class="technology-heading">The terminology...</p>
                                     <h1>Spaceport</h1>
                                     <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
                                 </div>
                                 <div class="right">
-                                    <img src="./assets/technology/image-spaceport-landscape.jpg" alt="image-spaceport-landscape">
+                                    <img src="./assets/technology/image-spaceport-portrait.jpg" alt="image-spaceport-landscape">
                                 </div>
                             </div>   
                         </div>
                     </div>
 
                 </section>
-            
             `;
+            document.getElementById('vehicle').style.display = 'flex';
+            document.getElementById('capsule').style.display = 'none';
+            document.getElementById('spaceport').style.display = 'none';
+            document.getElementById('number1').addEventListener('click', vehicleSection);
+            document.getElementById('number2').addEventListener('click', capsuleSection);
+            document.getElementById('number3').addEventListener('click', spaceportSection);
+            document.getElementById('number1').addEventListener('click', (e) => {
+                e.preventDefault();
+                vehicleSection();
+            });
+            
+            document.getElementById('number2').addEventListener('click', (e) => {
+                e.preventDefault();
+                capsuleSection();
+            });
+            
+            document.getElementById('number3').addEventListener('click', (e) => {
+                e.preventDefault();
+                spaceportSection();
+            });
     }
 }
 
@@ -399,3 +418,30 @@ function startCrewSlider() {
         crewMembers[currentMemberIndex].style.display = 'flex';
     }, 5000); 
 }
+
+
+function vehicleSection() {
+    const vehicle = document.getElementById('vehicle')
+    const capsule = document.getElementById('capsule')
+    const spaceport = document.getElementById('spaceport')
+    vehicle.style.display = 'flex';
+    capsule.style.display = 'none';
+    spaceport.style.display = 'none';
+}
+function capsuleSection() {
+    const vehicle = document.getElementById('vehicle')
+    const capsule = document.getElementById('capsule')
+    const spaceport = document.getElementById('spaceport')
+    vehicle.style.display = 'none';
+    capsule.style.display = 'flex';
+    spaceport.style.display = 'none';
+}
+function spaceportSection() {
+    const vehicle = document.getElementById('vehicle')
+    const capsule = document.getElementById('capsule')
+    const spaceport = document.getElementById('spaceport')
+    vehicle.style.display = 'none';
+    capsule.style.display = 'none';
+    spaceport.style.display = 'flex';
+}
+
